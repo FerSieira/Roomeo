@@ -1,9 +1,17 @@
 # Idea
 
-* Qué tipo de proxecto vas levar a cabo? Vas realizar únicamente a planificación e deseño ou crearás un entregable?
-* En que consiste o teu proxecto? Cal é o propósito principal do mesmo?
-* A quen vai destinada a aplicación? (Cómo é o contexto social do cliente ou sector da empresa á que está dirixido). 
-* Cal é a necesidade ou necesidades que se pretenden cubrir ou satisfacer? O desenvolvemento deste proxecto, abre unha oportunidade de negocio? É posible comercializalo? Como?
-* Existen na actualidade aplicacións que tenten dar resposta a esa(s) necesidade(s)? En que medida o conseguen? 
-* Qué obxectivos ten o teu proxecto? Qué requisitos básicos debe cumprir?
-* Qué tecnoloxías tes pensado empregar para levalo a cabo?
+La idea que quiero llevar a cabo es un sistema de gestión hotelera web. Me gustaría realizar la planificación y el diseño, además de entregar la aplicación web, intentando alcanzar la mayoría de las ideas que mencionaré.
+
+El proyecto consistirá en la creación de un PMS, que es un sistema de gestión hotelera, siendo su propósito principal la gestión de reservas, clientes y habitaciones. La idea es que cuando un hotel se suscriba a nuestros servicios, en un breve período de tiempo, creemos una nueva ruta dinámica para este cliente, donde daremos de alta una cuenta de administrador para la persona encargada del manejo de la aplicación en el hotel, que dará de alta al resto del personal. Estos podrán gestionar las reservas, los procesos de asignación de habitaciones, hacer check-in y check-out de clientes, dar de alta nuevos clientes o gestionar los datos de los ya existentes. Además, el personal de limpieza podrá cambiar el estado de una habitación una vez esté limpia, entre otras funciones.
+
+La aplicación va dirigida a hoteles de cualquier tamaño y categoría que busquen mejorar u optimizar su gestión operativa y administrativa. Aún existen algunos pequeños hoteles, mayoritariamente en zonas rurales, que aún utilizan o bien sistemas de gestión desfasados y algo complicados o ningún tipo de sistema digital y simplemente utilizan cardex y hojas de rooming, que básicamente es un método completamente obsoleto en el que tienes toda la información en papel.
+
+Las necesidades que pretendo cubrir con esta idea son facilitar el acceso a información teniéndolo todo en una aplicación web, así como el objetivo de hacer el sistema lo más sencillo y amigable posible para los trabajadores. Desde mi propia experiencia como antiguo trabajador del sector hotelero, una de las grandes preocupaciones de la mayoría de recepcionistas, especialmente a la hora de cambiar de hotel, era tener que adaptarse a una nueva aplicación. Por lo tanto, el objetivo será hacerla lo más intuitiva posible.
+
+En cuanto a la comercialización, creo que este proyecto abre una posibilidad de negocio. Ya existen algunos sistemas de gestión hotelera y de hecho, la tendencia actual es hacia un desarrollo web más que aplicaciones instalables. El sistema más común de comercialización en las aplicaciones PMS web es la suscripción anual generalmente, aunque también existen modelos mensuales, en los que el cliente paga por usar nuestra aplicación además de contar con soporte y mantenimiento.
+
+Aunque ya existen aplicaciones instalables o webs de este estilo y responden bastante bien a la demanda en mayor o menor medida, siempre siguen apareciendo nuevos PMS ya que es un sector en constante cambio.
+
+Los objetivos principales son dar respuesta a las necesidades de los hoteles de gestionar clientes, habitaciones y reservas, proporcionando una interfaz lo más intuitiva posible. Los requisitos básicos serían que los recepcionistas puedan añadir y gestionar reservas, dar de alta nuevos clientes, realizar el check-in y check-out para saber la disponibilidad del hotel, la gestión de habitaciones tanto por parte del departamento de recepción como el de pisos. Además, me gustaría añadir algunas funciones para generar informes que puedan ser de utilidad para el hotel.
+
+Las tecnologías que tengo pensado utilizar para el desarrollo de este proyecto son HTML, CSS y PHP, además de usar principalmente el framework de Laravel usado en el módulo de Acceso a Datos durante el ciclo, que ya cuenta con su propio ORM para interactuar con la base de datos. Aunque también puede ser que necesite algo de Javascript y alguna otra tecnología en el transcurso del desarrollo.
