@@ -70,7 +70,7 @@ Recursos humanos: Programador.
 Duración: 15h.
 
 ### Diagrama de Gantt
-Un diagrama de Gantt é unha representación gráfica da secuenciación que tes que seguir para realizar as tarefas planificadas. Pódese usar o software "Gantt project" ou calquera outro que permita representar nun cronograma a información relativa á planificación de tarefas. Neste diagrama plasmarás de forma gráfica e manexable as fases e tarefas anteriores.
+[DiagramaGantt](https://imgur.com/AxsWFJU)
 
 ## Orzamento
 
