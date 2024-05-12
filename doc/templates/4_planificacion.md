@@ -5,109 +5,101 @@
 ## Guía de planificación do proxecto
 
 ### Metodoloxía
-Indica a metodoloxía que se utilizará para a elaboración do proxecto: ciclo en cascada, incremental, espiral... Xustifica a elección.
+
+La metodología que he decidido utilizar para el desarrollo de la aplicación es el modelo en cascada. Es el modelo más simple y sencillo de utilizar. A pesar de que tiene ciertas desventajas como que dificulta el volver atrás en el proyecto y tiene un nivel de riesgo mayor que las otras metodologías creo que es el más conveniente. Su facilidad de uso y su rigidez nos ayuda a asegurarnos de que alcanzamos los resultados específicos en cada fase. Debido al ritmo que tenemos en este proyecto en el que vamos entregando la idea, el análisis, etc., en un orden bastante marcado esto lo hace muy similar al modelo cascada, donde para pasar a la siguiente fase debemos tener la anterior finalizada. 
+Además es una metodología que se adecua a como quiero llevar el desarrollo, primero planearlo todo bien y después ejecutarlo y en caso de que haya algo que no se corresponde volver atrás, replantear y volver a hacerlo. Es más tedioso pero a la vez, nos ayuda a intentar dejar el menor número de aspectos al azar y tener el proyecto bien planificado.
+
 
 ### Fases planificadas
 
-Descríbense as fases en que se divide o proxecto e as tarefas que se han levar a cabo en cada unha destas fases.
-Pódense indicar os recursos materiais e humanos asociados a cada tarefa ou, se son os mesmos, de maneira máis xeral.
+1. Análisis y planificación.
+2. Diseño y creación de la Base de Datos usando el ORM de Laravel.
+3. Desarrollo de las funcionalidades del panel de administrador.
+4. Desarrollo de funcionalidades para la interfaz de usuarios usando controladores y rutas.
+5. Diseño de las interfaces para los distintos niveles de usuario.
+6. Revisión de seguridad y control de calidad.
+7. Despliegue de la aplicación.
 
-#### Fase 1: Estudo de necesidades e modelo de negocio
 
-##### Tarefa 1: xxxxxxxx
+#### Fase 1: Planificación y Diseño
 
-Descrición: 
+##### Tarea 1: Análisis y Planificación
 
-Recursos hardware/software: 
+Descripción: Análisis y planificación del proyecto, sus requisitos y necesidades para llevarlo a cabo.
+Recursos hardware/software: Ordenador personal y Drive/Word para documentar el proyecto.
+Recursos humanos: Programador (yo) y asesora (mi tutora Rocío).
+Duración: 25h
 
-Recursos humanos: Persoas que se encargarán de realizar esta tarefa
+##### Tarea 2: Instalación de Software de desarrollo y creación de la BD usando el ORM de Laravel.
 
-Duración: 
+Descripción: Instalación de Laragon y diseño y creación de la base de datos usando Eloquent ORM.
+Recursos hardware/software: Laragon, Laravel.
+Recursos humanos: Programador.
+Duración: 5h
 
-#### Tarefa 2
-...
+#### Fase 2: Desarrollo
 
-#### Fase 2: xxxxx
+##### Tarea 3: Programación del back end.
 
-##### Tarefa 1: xxxxxxxx
+Descripción: Desarrollo de funcionalidades para el panel de administrador y de usuario usando controladores y rutas.
+Recursos hardware/software: Laragon, PHP.
+Recursos humanos: Programador.
+Duración: 65h
 
-Descrición: 
+##### Tarea 4: Programación del front end.
 
-Recursos hardware/software: 
+Descripción: Diseño de pantallas de usuario e interfaz web.
+Recursos hardware/software: Laragon, PHP, HTML, CSS.
+Recursos humanos: Programador.
+Duración: 35h
 
-Recursos humanos: 
+##### Tarea 5: Revisión de seguridad y encriptado de datos sensibles.
 
-Duración: 
+Descripción: Revisión de posibles vulnerabilidades y encriptación de datos.
+Recursos hardware/software: Laragon, PHP.
+Recursos humanos: Programador.
+Duración: 15h
 
-#### Tarefa 2
-...
+#### Fase 3: Despliegue y Mantenimiento
+
+##### Tarea 6: Despliegue
+
+Descripción: Preparación y configuración del entorno de producción para el despliegue del proyecto Laravel.
+Recursos hardware/software: Servidor de alojamiento web, Git para la gestión de versiones.
+Recursos humanos: Programador.
+Duración: 15h.
 
 ### Diagrama de Gantt
 Un diagrama de Gantt é unha representación gráfica da secuenciación que tes que seguir para realizar as tarefas planificadas. Pódese usar o software "Gantt project" ou calquera outro que permita representar nun cronograma a información relativa á planificación de tarefas. Neste diagrama plasmarás de forma gráfica e manexable as fases e tarefas anteriores.
 
 ## Orzamento
-O orzamento do proxecto será a suma do importe dos materiais que necesites para realizar o proxecto máis o importe que corresponde ao traballo realizado. 
-O importe relacionado co traballo no proxecto é relativamente fácil de obter se se elaboraron ben as etapas anteriores: definir as actividades necesarias e os recursos propios de cada actividade. Neste caso disporase dun custo por cada actividade e a suma do custo de todas as actividades será o custo total do traballo do proxecto. 
-Para establecer os custos do proxecto debes ter en conta diferentes conceptos: 
-- Materiais que se utilizan: material funxible, materias primas, materiais didácticos, roupa de traballo… 
-- Custo horario das persoas que participan directamente na actividade. 
-- Aluguer/compra de ferramentas, maquinaria, equipos informáticos e/ou audiovisuais… 
-- Aluguer/compra de locais 
-- Contratos de subministracións: auga, luz, electricidade, gas… Subcontrataciones 
-- Gastos de publicidade… 
-- Seguros ... 
 
-O maior custo no proxecto case sempre corresponde ás persoas, polo que é importante controlar o número de horas que se invisten en cada actividade para que non se nos desequilibre o orzamento. Tamén hai que coidar as subcontratacións; convén que traballen cun orzamento establecido.
- A continuación preséntanse dúas opción de táboa para facilitar a creación do orzamento do proxecto:
-
-### Orzamento por actividade
-
-| ACTIVIDADE | DURACIÓN | CUSTO (EUROS) | | CUSTO TOTAL ACTIVIDADE |
-|--|--|--|--|--|
-|            |          | PERSOAS|RECURSOS MATERIAIS|
-|||||
-|||||
-|||||
-|||||
-
-| TOTAL | PROXECTO | 
-| -- | -- |
+El cálculo  presupuestario de este proyecto se ha realizado teniendo en cuenta los siguientes gastos e inversiones:
+- El programador cobrará 15.50 euros/hora teniendo en cuenta el salario medio de un programador en España. Siendo la duración de este 160 horas el resultado sería 2480 €.
+- El coste de luz a tener en cuenta es mínimo pero aún así lo realizaremos: el PC que vamos a usar durante el proyecto tiene un consumo de 600 vatios que durante estas 160 horas consumirá unos 96kWh que teniendo en cuenta que el precio del kWh medio a 12/05/2024 es 0.07€ sería el coste total de luz del ordenador unos 4.8€.
+- El equipo informático constaría de dos pantallas que en conjunto suman 430 euros, un ordenador con procesador i5-11400, 16GB de RAM, 1.5TB y una gráfica GTX 1650 que sumaría 950€ y teclado más ratón que suman otros 180€.
+- El mobiliario e instalaciones supondría una inversión de unos 330 euros.
+- Necesitaríamos conexión a internet que por ejemplo R nos ofrece fibra óptica desde 39,99 euros al mes.
+- Y por último el alquiler del servidor web donde alojaremos nuestra aplicación sería de unos 11€/mes en Dinahosting.
 
 ### Orzamento por partidas de inversión / gasto:
 
 | CONCEPTO | IMPORTE|
 |--|--|
 |**A) INVERSIONS**
-|Gastos de establecemento e gastos de constitución
-|Total inmobilizacións inmateriais
-|Terreos
-|Construcións
-|Instalacións técnicas
-|Maquinaria
-|Ferramentas
-|Mobiliario e instalacións
-|Equipos informáticos
-|Elementos de transporte
-|Outro inmobilizado material
-|Total inmobilizacións materiais
-|Outros gastos a distribuír en varios exercicios
-|**TOTAL INVERSIÓNS:**
+|Mobiliario e instalacións | 330 euros |
+|Equipos informáticos | 1560 euros |
+|**TOTAL INVERSIÓNS:** | 1890 euros |
 |**B) GASTOS**
-|Compras de materiais
-|Arrendamentos
-|Publicidade, propaganda e relacións públicas
-|Persoal
-|Reparacións e conservación
-|Servizos de profesionais independentes
-|Outros gastos xerais
-|Gastos financeiros
-|Amortizacións
-|Gastos de xestión e administración
-|**TOTAL GASTOS:**
+|Persoal | 2480 euros |
+|Luz | 4,8 euros |
+|Internet | 80 euros |
+|Alquiler Servidor Web | 11 euros |
+|**TOTAL GASTOS:** | 2.575,8 euros |
 
 |TOTAL ORZAMENTO:
 |--|
-
+|4.465,8|
 ### WEBGRAFÍA
 Guía para a elaboración de proyectos. Gobierno Vasco.
 https://www.pluralismoyconvivencia.es/upload/19/71/guia_elaboracion_proyectos_c.pdf  (páxina 49 e seguintes)
