@@ -70,7 +70,7 @@ Recursos humanos: Programador.
 Duración: 15h.
 
 ### Diagrama de Gantt
-![Diagrama de Gantt](path "Gantt.png")
+![Diagrama de Gantt](path "https://gitlab.com/iesleliadoura/DAM2/fernando-sieira/-/blob/main/doc/img/Gantt.png")
 
 ## Orzamento
 
