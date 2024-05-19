@@ -70,7 +70,7 @@ Recursos humanos: Programador.
 Duración: 15h.
 
 ### Diagrama de Gantt
-![Diagrama de Gantt](path "doc/img/Gantt.png")
+![Diagrama de Gantt](doc/img/Gantt.png)
 
 ## Orzamento
 
