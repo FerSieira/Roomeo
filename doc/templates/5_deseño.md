@@ -6,13 +6,36 @@
 
 ### Modelo conceptual do dominio da aplicación e/ou Diagrama de clases [usando UML, ConML, ou linguaxe semellante].
 
+![Diagrama de clases](doc/img/UMLPMS.png)
+
 ### Casos de uso [descritos en fichas e/ou mediante esquemas; deben incluír os actores (tipos de usuarios) implicados en cada caso de uso].
+
+A continuación muestro los diagrama de casos de uso para los distintos actores junto con las fichas de las acciones en cada uno de los casos:
+
+Diagrama: 
+![Casos de Uso Diagrama](doc/img/CasosdeUso.png)
+
+Fichas:
+![Casos Uso 1](doc/img/CasoUso1.png)
+![Casos Uso 2](doc/img/CasoUso2.png)
+![Casos Uso 3](doc/img/CasoUso3.png)
+![Casos Uso 4](doc/img/CasoUso4.png)
 
 ### Deseño de interfaces de usuarios [mockups ou diagramas...].
 
 ### Diseño de interfaces software e hardware (se aplica)
 
 ### Diagrama de Base de Datos.
+
+En cuanto a los diagramas de la base de datos, presento dos:
+
+El primero es un diagrama entidad relación:
+
+![Diagrama ER Chen](doc/img/DiagramaER.png)
+
+Y el segundo es un diagrama general de la base de datos utilizando phpMyAdmin para generarlo:
+
+![Diagrama BD](doc/img/DiagramaBD.png)
 
 ### Diagrama de compoñentes software que constitúen o produto e de despregue.
 
