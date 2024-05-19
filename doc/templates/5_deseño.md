@@ -41,6 +41,10 @@ Y el segundo es un diagrama general de la base de datos utilizando phpMyAdmin pa
 
 ### Diagrama de despregamento
 
+Este es el diagrama de despliegue de la aplicación. Tiene en cuenta que los usuarios se pueden conectar a la dirección URL desde móvil u ordenador, se conectarán al navegador web hosteado en un servidor donde Eloquent ORM y la aplicación se comunicarán con la base de datos.
+
+![Diagrama de despliegue](doc/img/Despliegue.png)
+
 ### Outros diagramas, esquemas ou documentacion (seguridade, redundancia, expliacións, configuracións...)
 
 ## Calidade
