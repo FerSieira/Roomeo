@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Acompanante;
+use Carbon\Carbon;
 
 class AcompanantesController extends Controller {
     public function index() {
@@ -21,7 +22,7 @@ class AcompanantesController extends Controller {
             'Apellidos' => 'required|max:255',
             'Codigo_Postal' => 'required|max:10',
             'DNI' => 'required|max:20',
-            'fecha_nac' => 'required|date',
+            'fecha_nac' => 'required|date|before_or_equal:' . Carbon::today()->toDateString(),
             'nacionalidad' => 'required|max:255',
             'direccion' => 'required|max:255',
             'pais' => 'required|max:255',
@@ -35,7 +36,6 @@ class AcompanantesController extends Controller {
     
         return redirect()->route('acompanantes.index')->with('success', 'Acompañante creado correctamente.');
     }
-    
 
     public function show(Acompanante $acompanante) {
         return view('acompanantes.show', compact('acompanante'));
@@ -51,7 +51,7 @@ class AcompanantesController extends Controller {
             'Apellidos' => 'required|max:255',
             'Codigo_Postal' => 'required|max:10',
             'DNI' => 'required|max:20',
-            'fecha_nac' => 'required|date',
+            'fecha_nac' => 'required|date|before_or_equal:' . Carbon::today()->toDateString(),
             'nacionalidad' => 'required|max:255',
             'direccion' => 'required|max:255',
             'pais' => 'required|max:255',
@@ -64,8 +64,6 @@ class AcompanantesController extends Controller {
 
         return redirect()->route('acompanantes.index')->with('success', 'Acompañante actualizado correctamente.');
     }
-
-
 
     public function destroy(Acompanante $acompanante) {
         $acompanante->delete();

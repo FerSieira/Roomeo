@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Reserva extends Model
 {
@@ -23,12 +24,12 @@ class Reserva extends Model
         return $this->belongsTo(Cliente::class, 'ID_Cliente');
     }
 
-    public function tipoHabitacion() {
-        return $this->belongsTo(TipoHabitacion::class, 'ID_Tipo_Hab');
-    }
-
     public function habitacion() {
         return $this->belongsTo(Habitacion::class, 'ID_Habitacion');
+    }
+
+    public function tipoHabitacion() {
+        return $this->belongsTo(TipoHabitacion::class, 'ID_Tipo_Hab');
     }
 
     public function tarifa() {
@@ -40,10 +41,8 @@ class Reserva extends Model
     }
 
     public function acompanantes() {
-    return $this->belongsToMany(Acompanante::class, 'reserva_acompanante', 'ID_Reserva', 'ID_Acompanante');
+        return $this->belongsToMany(Acompanante::class, 'reserva_acompanante', 'ID_Reserva', 'ID_Acompanante');
     }
-
-
 
     public function servicios() {
         return $this->belongsToMany(Servicio::class, 'reserva_servicios', 'ID_Reserva', 'ID_Servicio')

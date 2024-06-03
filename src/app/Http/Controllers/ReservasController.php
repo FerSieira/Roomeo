@@ -14,19 +14,27 @@ use Carbon\Carbon;
 
 class ReservasController extends Controller {
     
-    public function index() {
-        $reservas = Reserva::all();
-
-        // Convertir las fechas a instancias de Carbon
-        foreach ($reservas as $reserva) {
-            $reserva->Fecha_Llegada = Carbon::parse($reserva->Fecha_Llegada);
-            $reserva->Fecha_Salida = Carbon::parse($reserva->Fecha_Salida);
+    public function index(Request $request) {
+        $query = Reserva::with(['cliente', 'habitacion']);
+    
+        if ($request->filled('fecha_inicio')) {
+            $query->whereDate('Fecha_Llegada', $request->fecha_inicio);
+        } elseif (!$request->filled('ver_todas')) {
+            $query->whereDate('Fecha_Llegada', '>=', Carbon::today());
         }
-
+    
+        if ($request->filled('nombre_cliente')) {
+            $query->whereHas('cliente', function($q) use ($request) {
+                $q->where('Nombre', 'like', '%' . $request->nombre_cliente . '%')
+                  ->orWhere('Apellidos', 'like', '%' . $request->nombre_cliente . '%');
+            });
+        }
+    
+        $reservas = $query->get();
+    
         return view('reservas.index', compact('reservas'));
     }
 
-    
      public function create() {
         $clientes = Cliente::all();
         $tipoHabitaciones = TipoHabitacion::all();
