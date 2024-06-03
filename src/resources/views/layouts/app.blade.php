@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roomeo @yield('Roomeo')</title>
-    <!-- Incluyo Bootstrap CSS -->
+    <!-- Incluyo Boosttrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
@@ -75,7 +75,7 @@
 
     <footer class="bg-dark text-white mt-4">
         <div class="container">
-            <p class="text-center mb-0 py-3">&copy; 2024 Roomeo. Todos los derechos reservados.</p>
+            <p class="text-center mb-0 py-3">2024 Roomeo. Proyecto Open Source IES Leliadoura.</p>
         </div>
     </footer>
 
