@@ -7,7 +7,7 @@ use App\Models\Habitacion;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class MenuPrincipalController extends Controller {
+class DashboardController extends Controller {
     public function index() {
         $hoy = Carbon::today();
 

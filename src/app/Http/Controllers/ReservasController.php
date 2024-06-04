@@ -10,10 +10,10 @@ use App\Models\TipoHabitacion;
 use App\Models\Acompanante;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 
 class ReservasController extends Controller {
-    
     public function index(Request $request) {
         $query = Reserva::with(['cliente', 'habitacion']);
     
@@ -32,8 +32,19 @@ class ReservasController extends Controller {
     
         $reservas = $query->get();
     
-        return view('reservas.index', compact('reservas'));
+        // Obtener los datos para el gráfico
+        $totalHabitaciones = Habitacion::count();
+        $ocupadas = Habitacion::where('estado', 'Ocupada')->count();
+        $libres = $totalHabitaciones - $ocupadas;
+    
+        // Estados de las reservas
+        $reservasEstados = Reserva::select(DB::raw('count(*) as count, Estado'))
+            ->groupBy('Estado')
+            ->pluck('count', 'Estado')->toArray();
+    
+        return view('reservas.index', compact('reservas', 'ocupadas', 'libres', 'reservasEstados'));
     }
+
 
      public function create() {
         $clientes = Cliente::all();
@@ -109,8 +120,23 @@ class ReservasController extends Controller {
     }
 
     public function edit(Reserva $reserva) {
-        return view('reservas.edit', compact('reserva'));
+        $clientes = Cliente::all();
+        $tipoHabitaciones = TipoHabitacion::all();
+        $habitaciones = Habitacion::all();
+        $tarifas = Tarifa::all();
+        $acompanantes = $reserva->acompanantes;
+    
+        $reserva->Fecha_Llegada = Carbon::parse($reserva->Fecha_Llegada);
+        $reserva->Fecha_Salida = Carbon::parse($reserva->Fecha_Salida);
+    
+        foreach ($acompanantes as $acompanante) {
+            $acompanante->fecha_nac = Carbon::parse($acompanante->fecha_nac);
+        }
+    
+        return view('reservas.edit', compact('reserva', 'clientes', 'tipoHabitaciones', 'habitaciones', 'tarifas', 'acompanantes'));
     }
+    
+    
 
     public function update(Request $request, Reserva $reserva) {
         $validatedData = $request->validate([
