@@ -40,8 +40,6 @@ La licencia utilizada para el proyecto es: [GNU General Public License](LICENSE)
 
 ## Índice
 
-> *TODO*: Simplemente indexa ordenadamente todo tu proyecto.
-
 1. Anteproyecto
     * 1.1. [Idea](doc/templates/1_idea.md)
     * 1.2. [Necesidades](doc/templates/2_necesidades.md)
