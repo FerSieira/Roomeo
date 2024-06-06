@@ -1,8 +1,5 @@
 # Proyecto fin de ciclo
 
-> *TODO*: Este documento será la "*página de aterrizaje*" de tu proyecto. Será lo primero que vean los que se interesen por él. Cuida su redacción con todo tu mimo. Elimina posteriormente todas las líneas "*TODO*" cuando creas finalizada su redacción.
-> Puedes acompañar a la redacción de este fichero con imágenes o gifs, pero no abuses de ellos.
-
 ## Descripción
 
 En este proyecto he desarrollado una aplicación web para gestión hotelera, con el objetivo de que sea intuitiva y fácil de usar para el personal del hotel. La aplicación ofrece herramientas para gestionar las reservas, clientes, habitaciones, informes y facturación de forma sencilla.
@@ -19,8 +16,11 @@ El otro objetivo principal es como mencionamos anteriormente, que sea intuitivo 
 
 ## Uso
 
-> *TODO*: Es este apartado describe brevemente cómo se usará el software que proyectas. Si tiene una interfaz de terminal, describe aquí su sintaxis. Si tiene una interfaz gráfica de usuario, describe aquí **sólo el uso** (a modo de sumario) **de los aspectos más relevantes de su funcionamiento** (máxima brevedad, como si fuese un anuncio reclamo o comercial).
-> Si tu proyecto es documental, realiza una especificación de cómo planteas estas interfaces, con ejemplos incluso o esquemas de diseño. En otras palabras, realiza este apartado independientemente que no haya implementación.
+Para utilizar la aplicación el usuario solo tendrá que estar registrado en el sistema y conocer el dominio en el que está alojada la aplicación para el uso de los empleados de su hotel. Tras iniciar sesión el usuario podrá realizar reservas, registrar nuevos clientes en el sistema, hacer el check-in del cliente, asignar habitaciones y reservar los servicios que tenga disponibles el hotel para los huéspedes. Además podrá realizar el check-out, que a su vez generará la factura correspondiente a la reserva.
+
+El administrador o gerente del hotel, con permisos superiores, podrá gestionar las tarifas, registrar nuevos usuarios cuando se incorporen nuevos empleados, entre otras funcionalidades.
+
+El servicio de limpieza podrá conectarse al dominio desde su dispositivo móvil y modificar el estado de una habitación a limpio o informar al personal de recepción para que estos lo hagan.
 
 ## Sobre el autor
 
@@ -36,10 +36,7 @@ Puedes contactarme en: fernandosieira98@gmail.com
 
 ## Licencia
 
-> *TODO*: Es requisito INDISPENSABLE el licenciar explícitamente el proyecto software. Se recomienda licenciar con *GNU Free Documentation License Version 1.3*. Crear un fichero `LICENSE` en la raíz del repo, con tu fichero de licencia. Recuerda que si empleas una licencia de software libre estás autorizando la derivación de tu obra bajo la misma licencia que elijas, pudiendo dar continuidad, p. e. otro alumno, para continuar tu proyecto en otro curso.
-> Si tu proyecto es documental, recomendamos los términos de *GNU Free Documentation License Version 1.3*, crea igualmente el fichero `LICENSE`. Será especialmente valorado en este caso, la claridad de la especificación para que el proyecto pueda ser ejecutado partiendo de lo proyectado.
-
-La licencia utilizada para el proyecto es [GNU General Public License](LICENSE)
+La licencia utilizada para el proyecto es: [GNU General Public License](LICENSE)
 
 ## Índice
 
