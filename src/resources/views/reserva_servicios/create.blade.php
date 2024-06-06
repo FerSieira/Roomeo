@@ -6,10 +6,13 @@
     <form method="POST" action="{{ route('reserva_servicios.store') }}">
         @csrf
         <div class="mb-3">
-            <label for="ID_Reserva" class="form-label">Reserva</label>
-            <select class="form-control" id="ID_Reserva" name="ID_Reserva" required>
-                @foreach ($reservas as $reserva)
-                    <option value="{{ $reserva->ID_Reservas }}">{{ $reserva->ID_Reservas }}</option>
+            <label for="ID_Habitacion" class="form-label">Habitación en Uso</label>
+            <select class="form-control" id="ID_Habitacion" name="ID_Habitacion" required>
+                <option value="">Seleccione una habitación</option>
+                @foreach ($habitaciones as $habitacion)
+                    <option value="{{ $habitacion->ID_Habitacion }}">
+                        {{ $habitacion->Num_hab }}
+                    </option>
                 @endforeach
             </select>
         </div>

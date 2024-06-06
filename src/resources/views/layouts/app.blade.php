@@ -31,6 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('reserva_servicios.index') }}">Reserva Servicios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('facturas.index') }}">Facturas</a>
+                    </li>
                     @if(Auth::check() && Auth::user()->Rol == 'administrador')
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('tarifas.index') }}">Tarifas</a>
@@ -78,6 +81,7 @@
             <p class="text-center mb-0 py-3">2024 Roomeo. Proyecto Open Source IES Leliadoura.</p>
         </div>
     </footer>
+    @yield('scripts')
 
     <!-- Incluyo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

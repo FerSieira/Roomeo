@@ -5,6 +5,24 @@
     <h1>Clientes</h1>
     <a href="{{ route('clientes.create') }}" class="btn btn-primary">Crear Nuevo Cliente</a>
     <a href="{{ route('acompanantes.index') }}" class="btn btn-secondary">Ver Acompañantes</a>
+
+    <form method="GET" action="{{ route('clientes.index') }}" class="mt-3">
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" name="nombre" placeholder="Buscar por nombre" value="{{ request('nombre') }}">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="apellidos" placeholder="Buscar por apellidos" value="{{ request('apellidos') }}">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="dni" placeholder="Buscar por DNI" value="{{ request('dni') }}">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </form>
+
     <table class="table">
         <thead>
             <tr>
@@ -37,3 +55,4 @@
     </table>
 </div>
 @endsection
+

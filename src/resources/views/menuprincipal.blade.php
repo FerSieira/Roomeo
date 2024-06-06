@@ -88,7 +88,7 @@
         var segundos = String(ahora.getSeconds()).padStart(2, '0');
         var horaActual = horas + ':' + minutos + ':' + segundos;
 
-        console.log("Hora Actual: ", horaActual);  // Verifica la hora actual en la consola
+        console.log("Hora Actual: ", horaActual);
         var relojElemento = document.getElementById('reloj');
         if (relojElemento) {
             console.log("Elemento del reloj encontrado:", relojElemento);

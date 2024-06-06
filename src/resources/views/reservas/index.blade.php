@@ -4,7 +4,6 @@
 <div class="container">
     <h1>Reservas</h1>
     
-    <!-- Formulario de búsqueda -->
     <form method="GET" action="{{ route('reservas.index') }}" class="mb-4">
         <div class="row">
             <div class="col-md-3">
@@ -54,6 +53,27 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar esta reserva?')">Eliminar</button>
                     </form>
+                    @if ($reserva->Estado != 'completada' && $reserva->Estado != 'en curso')
+                        <form action="{{ route('reservas.checkin', ['reserva' => $reserva->ID_Reservas]) }}" method="POST" style="display: inline-block;">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn btn-success btn-sm">Check-in</button>
+                        </form>
+                    @endif
+                    @if ($reserva->Estado == 'en curso')
+                        <form action="{{ route('reservas.checkout', ['reserva' => $reserva->ID_Reservas]) }}" method="POST" style="display: inline-block;">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn btn-warning btn-sm">Check-out</button>
+                        </form>
+                    @endif
+                    @if ($reserva->habitacion && $reserva->habitacion->Estado == 'Sucia')
+                        <form action="{{ route('reservas.limpiar', ['habitacion' => $reserva->habitacion->ID_Habitacion]) }}" method="POST" style="display: inline-block;">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn btn-secondary btn-sm">Limpiar</button>
+                        </form>
+                    @endif
                 </td>
             </tr>
             @endforeach
