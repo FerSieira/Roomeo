@@ -10,35 +10,55 @@ use App\Models\Empleado;
 use Illuminate\Support\Facades\Log;
 
 class ReservaServiciosController extends Controller {
-    public function index() {
-        $reservaServicios = ReservaServicio::with(['reserva', 'servicio', 'empleado'])->get();
+    public function index(Request $request) {
+        $query = ReservaServicio::with(['reserva.habitacion', 'servicio', 'empleado']);
+
+        if (!$request->has('show_all')) {
+            $query->where('Dia_Hora', '>=', now());
+        }
+
+        $reservaServicios = $query->get();
+
         return view('reserva_servicios.index', compact('reservaServicios'));
     }
 
     public function create() {
-        $reservas = Reserva::all();
+        $reservasEnCurso = Reserva::where('Estado', 'en curso')->with('habitacion')->get();
+
+        $habitaciones = $reservasEnCurso->map(function ($reserva) {
+            return $reserva->habitacion;
+        })->unique('ID_Habitacion')->filter();
+    
         $servicios = Servicio::all();
         $empleados = Empleado::all();
-        return view('reserva_servicios.create', compact('reservas', 'servicios', 'empleados'));
+    
+        return view('reserva_servicios.create', compact('habitaciones', 'servicios', 'empleados'));
     }
 
     public function store(Request $request) {
         $request->validate([
-            'ID_Reserva' => 'required|exists:reservas,ID_Reservas',
+            'ID_Habitacion' => 'required|exists:habitaciones,ID_Habitacion',
             'ID_Servicio' => 'required|exists:servicios,ID_Servicio',
             'ID_Empleado' => 'required|exists:empleados,ID_Empleado',
-            'Dia_Hora' => 'required|date_format:Y-m-d\TH:i',
+            'Dia_Hora' => 'required|date_format:Y-m-d\TH:i'
         ]);
 
-        // Conveirto el campo diahora al formato Ymd His
+        $reserva = Reserva::where('ID_Habitacion', $request->ID_Habitacion)
+            ->where('Estado', 'en curso')
+            ->first();
+
+        if (!$reserva) {
+            return redirect()->back()->withErrors(['msg' => 'No se encontró una reserva activa para la habitación seleccionada.']);
+        }
+
         $data = $request->all();
+        $data['ID_Reserva'] = $reserva->ID_Reservas;
         $data['Dia_Hora'] = date('Y-m-d H:i:s', strtotime($data['Dia_Hora']));
 
         ReservaServicio::create($data);
 
         return redirect()->route('reserva_servicios.index')->with('success', 'Servicio reservado correctamente.');
     }
-
 
     public function show(ReservaServicio $reservaServicio) {
         return view('reserva_servicios.show', compact('reservaServicio'));
@@ -59,7 +79,6 @@ class ReservaServiciosController extends Controller {
             'Dia_Hora' => 'required|date_format:Y-m-d\TH:i',
         ]);
 
-        // Mismo que en el metodo store
         $data = $request->all();
         $data['Dia_Hora'] = date('Y-m-d H:i:s', strtotime($data['Dia_Hora']));
 
@@ -68,9 +87,7 @@ class ReservaServiciosController extends Controller {
         return redirect()->route('reserva_servicios.index')->with('success', 'Reserva de servicio actualizada correctamente.');
     }
 
-
-    public function destroy(ReservaServicio $reservaServicio)
-    {
+    public function destroy(ReservaServicio $reservaServicio) {
         $reservaServicio->delete();
         return redirect()->route('reserva_servicios.index')->with('success', 'Reserva de servicio eliminada correctamente.');
     }

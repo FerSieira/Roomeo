@@ -48,4 +48,19 @@ class Reserva extends Model
         return $this->belongsToMany(Servicio::class, 'reserva_servicios', 'ID_Reserva', 'ID_Servicio')
                     ->withPivot('ID_Empleado', 'Dia_Hora');
     }
+
+    public function reservaServicios() {
+        return $this->hasMany(ReservaServicio::class, 'ID_Reserva');
+    }
+
+    // Mutators
+    public function getFechaLlegadaAttribute($value)
+    {
+        return Carbon::parse($value);
+    }
+
+    public function getFechaSalidaAttribute($value)
+    {
+        return Carbon::parse($value);
+    }
 }

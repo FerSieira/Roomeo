@@ -7,10 +7,27 @@ use App\Models\Acompanante;
 use Carbon\Carbon;
 
 class AcompanantesController extends Controller {
-    public function index() {
-        $acompanantes = Acompanante::all();
+    
+    public function index(Request $request) {
+        $query = Acompanante::query();
+    
+        if ($request->filled('nombre')) {
+            $query->where('Nombre', 'like', '%' . $request->nombre . '%');
+        }
+    
+        if ($request->filled('apellidos')) {
+            $query->where('Apellidos', 'like', '%' . $request->apellidos . '%');
+        }
+    
+        if ($request->filled('dni')) {
+            $query->where('DNI', 'like', '%' . $request->dni . '%');
+        }
+    
+        $acompanantes = $query->get();
+    
         return view('acompanantes.index', compact('acompanantes'));
     }
+    
 
     public function create() {
         return view('acompanantes.create');

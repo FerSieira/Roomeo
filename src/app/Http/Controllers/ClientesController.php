@@ -6,10 +6,27 @@ use App\Models\Cliente;
 use Illuminate\Http\Request;
 
 class ClientesController extends Controller {
-    public function index() {
-        $clientes = Cliente::all();
+    
+    public function index(Request $request) {
+        $query = Cliente::query();
+    
+        if ($request->filled('nombre')) {
+            $query->where('Nombre', 'like', '%' . $request->nombre . '%');
+        }
+    
+        if ($request->filled('apellidos')) {
+            $query->where('Apellidos', 'like', '%' . $request->apellidos . '%');
+        }
+    
+        if ($request->filled('dni')) {
+            $query->where('DNI', 'like', '%' . $request->dni . '%');
+        }
+    
+        $clientes = $query->get();
+    
         return view('clientes.index', compact('clientes'));
     }
+    
 
     public function create() {
         return view('clientes.create');
