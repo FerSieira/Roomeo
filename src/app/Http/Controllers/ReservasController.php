@@ -21,7 +21,7 @@ class ReservasController extends Controller {
         
         if ($request->filled('fecha_inicio')) {
             $query->whereDate('Fecha_Llegada', $request->fecha_inicio);
-        } elseif (!$request->filled('ver_todas')) {
+        } elseif (!$request->has('ver_todas')) {
             $query->whereDate('Fecha_Llegada', '>=', Carbon::today());
         }
         
@@ -32,7 +32,7 @@ class ReservasController extends Controller {
             });
         }
         
-        $reservas = $query->orderBy('Fecha_Llegada')->get();
+        $reservas = $query->orderBy('Fecha_Llegada')->paginate(10);
         
         $totalHabitaciones = Habitacion::count();
         $ocupadas = Habitacion::where('estado', 'Ocupada')->count();
@@ -44,6 +44,7 @@ class ReservasController extends Controller {
         
         return view('reservas.index', compact('reservas', 'ocupadas', 'libres', 'reservasEstados'));
     }
+    
 
     public function create() {
         $clientes = Cliente::all();

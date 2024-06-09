@@ -17,11 +17,7 @@
             <p class="card-text"><strong>País:</strong> {{ $cliente->Pais }}</p>
             <p class="card-text"><strong>Tarjeta de Crédito:</strong> {{ $cliente->Tarjeta_Cred }}</p>
             <a href="{{ route('clientes.edit', $cliente->ID_Cliente) }}" class="btn btn-primary">Editar</a>
-            <form action="{{ route('clientes.destroy', $cliente->ID_Cliente) }}" method="POST" style="display:inline;">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de querer eliminar este cliente?')">Eliminar</button>
-            </form>
+            
         </div>
     </div>
 </div>

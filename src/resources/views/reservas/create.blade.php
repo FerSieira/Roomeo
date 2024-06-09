@@ -29,53 +29,53 @@
             </div>
 
             <div id="cliente_nuevo" style="display: none;">
-                <div class="mb-3">
+            <div class="mb-3">
                     <label for="Nombre">Nombre</label>
-                    <input type="text" class="form-control" id="Nombre" name="nuevo_cliente[Nombre]">
+                    <input type="text" class="form-control" id="Nombre" name="nuevo_cliente[Nombre]" value="{{ old('nuevo_cliente.Nombre') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Apellidos">Apellidos</label>
-                    <input type="text" class="form-control" id="Apellidos" name="nuevo_cliente[Apellidos]">
+                    <input type="text" class="form-control" id="Apellidos" name="nuevo_cliente[Apellidos]" value="{{ old('nuevo_cliente.Apellidos') }}">
                 </div>
                 <div class="mb-3">
                     <label for="DNI">DNI</label>
-                    <input type="text" class="form-control" id="DNI" name="nuevo_cliente[DNI]">
+                    <input type="text" class="form-control" id="DNI" name="nuevo_cliente[DNI]" value="{{ old('nuevo_cliente.DNI') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Nacionalidad">Nacionalidad</label>
-                    <input type="text" class="form-control" id="Nacionalidad" name="nuevo_cliente[Nacionalidad]">
+                    <input type="text" class="form-control" id="Nacionalidad" name="nuevo_cliente[Nacionalidad]" value="{{ old('nuevo_cliente.Nacionalidad') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Telefono">Teléfono</label>
-                    <input type="text" class="form-control" id="Telefono" name="nuevo_cliente[Telefono]">
+                    <input type="text" class="form-control" id="Telefono" name="nuevo_cliente[Telefono]" value="{{ old('nuevo_cliente.Telefono') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Fecha_nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" id="Fecha_nacimiento" name="nuevo_cliente[Fecha_nacimiento]">
+                    <input type="date" class="form-control" id="Fecha_nacimiento" name="nuevo_cliente[Fecha_nacimiento]" value="{{ old('nuevo_cliente.Fecha_nacimiento') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Email">Email</label>
-                    <input type="email" class="form-control" id="Email" name="nuevo_cliente[Email]">
+                    <input type="email" class="form-control" id="Email" name="nuevo_cliente[Email]" value="{{ old('nuevo_cliente.Email') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Direccion">Dirección</label>
-                    <input type="text" class="form-control" id="Direccion" name="nuevo_cliente[Direccion]">
+                    <input type="text" class="form-control" id="Direccion" name="nuevo_cliente[Direccion]" value="{{ old('nuevo_cliente.Direccion') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Codigo_Postal">Código Postal</label>
-                    <input type="text" class="form-control" id="Codigo_Postal" name="nuevo_cliente[Codigo_Postal]">
+                    <input type="text" class="form-control" id="Codigo_Postal" name="nuevo_cliente[Codigo_Postal]" value="{{ old('nuevo_cliente.Codigo_Postal') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Ciudad">Ciudad</label>
-                    <input type="text" class="form-control" id="Ciudad" name="nuevo_cliente[Ciudad]">
+                    <input type="text" class="form-control" id="Ciudad" name="nuevo_cliente[Ciudad]" value="{{ old('nuevo_cliente.Ciudad') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Pais">País</label>
-                    <input type="text" class="form-control" id="Pais" name="nuevo_cliente[Pais]">
+                    <input type="text" class="form-control" id="Pais" name="nuevo_cliente[Pais]" value="{{ old('nuevo_cliente.Pais') }}">
                 </div>
                 <div class="mb-3">
                     <label for="Tarjeta_Cred">Tarjeta de Crédito</label>
-                    <input type="text" class="form-control" id="Tarjeta_Cred" name="nuevo_cliente[Tarjeta_Cred]">
+                    <input type="text" class="form-control" id="Tarjeta_Cred" name="nuevo_cliente[Tarjeta_Cred]" value="{{ old('nuevo_cliente.Tarjeta_Cred') }}">
                 </div>
             </div>
         </fieldset>
@@ -116,15 +116,15 @@
             </div>
             <div class="mb-3">
                 <label for="Adultos">Adultos</label>
-                <input type="number" class="form-control" id="Adultos" name="Adultos" required>
+                <input type="number" class="form-control" id="Adultos" name="Adultos" value="{{ old('Adultos') }}" required>
             </div>
             <div class="mb-3">
                 <label for="Ninos">Niños</label>
-                <input type="number" class="form-control" id="Ninos" name="Ninos">
+                <input type="number" class="form-control" id="Ninos" name="Ninos" value="{{ old('Ninos') }}">
             </div>
             <div class="mb-3">
                 <label for="Solicitudes">Solicitudes Especiales</label>
-                <textarea class="form-control" id="Solicitudes" name="Solicitudes"></textarea>
+                <textarea class="form-control" id="Solicitudes" name="Solicitudes">{{ old('Solicitudes') }}</textarea>
             </div>
             <div class="mb-3">
                 <label for="Estado">Estado</label>

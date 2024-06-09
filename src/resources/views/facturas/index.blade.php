@@ -45,5 +45,10 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex justify-content-center">
+        {{ $facturas->appends(request()->query())->links() }}
+    </div>
+
 </div>
 @endsection

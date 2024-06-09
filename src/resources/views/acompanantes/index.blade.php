@@ -3,7 +3,15 @@
 @section('content')
 <div class="container">
     <h1>Acompañantes</h1>
-    <a href="{{ route('acompanantes.create') }}" class="btn btn-primary">Crear Nuevo Acompañante</a>
+
+    <style>
+        .btn-custom {
+            min-width: 100px;
+            text-align: center;
+        }
+    </style>
+
+    <a href="{{ route('acompanantes.create') }}" class="btn btn-primary btn-custom">Crear Nuevo Acompañante</a>
 
     <form method="GET" action="{{ route('acompanantes.index') }}" class="mt-3">
         <div class="row mb-3">
@@ -17,7 +25,7 @@
                 <input type="text" class="form-control" name="dni" placeholder="Buscar por DNI" value="{{ request('dni') }}">
             </div>
             <div class="col">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button type="submit" class="btn btn-primary btn-custom">Buscar</button>
             </div>
         </div>
     </form>
@@ -40,17 +48,16 @@
                 <td>{{ $acompanante->Apellidos }}</td>
                 <td>{{ $acompanante->DNI }}</td>
                 <td>
-                    <a href="{{ route('acompanantes.show', $acompanante->ID_Acompanante) }}" class="btn btn-info">Ver</a>
-                    <a href="{{ route('acompanantes.edit', $acompanante->ID_Acompanante) }}" class="btn btn-primary">Editar</a>
-                    <form action="{{ route('acompanantes.destroy', $acompanante->ID_Acompanante) }}" method="POST" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de querer eliminar este acompañante?')">Eliminar</button>
-                    </form>
+                    <a href="{{ route('acompanantes.show', $acompanante->ID_Acompanante) }}" class="btn btn-info btn-custom">Ver</a>
+                    <a href="{{ route('acompanantes.edit', $acompanante->ID_Acompanante) }}" class="btn btn-primary btn-custom">Editar</a>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex justify-content-center">
+        {{ $acompanantes->appends(request()->query())->links() }}
+    </div>
 </div>
 @endsection

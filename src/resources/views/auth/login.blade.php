@@ -1,5 +1,21 @@
 <x-guest-layout>
     <!-- Session Status -->
+
+    <style>
+        .btn-custom {
+            min-width: 80px;
+            text-align: center;
+            margin: 5px;
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}">
@@ -39,7 +55,7 @@
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
+            <x-primary-button class="btn btn-custom">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>

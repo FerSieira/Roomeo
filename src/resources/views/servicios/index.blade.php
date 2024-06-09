@@ -3,7 +3,15 @@
 @section('content')
 <div class="container">
     <h1>Servicios</h1>
-    <a href="{{ route('servicios.create') }}" class="btn btn-primary mb-3">Crear Servicio</a>
+
+    <style>
+        .btn-custom {
+            min-width: 100px;
+            text-align: center;
+        }
+    </style>
+
+    <a href="{{ route('servicios.create') }}" class="btn btn-primary mb-3 btn-custom">Crear Servicio</a>
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -29,12 +37,12 @@
                     <td>{{ $servicio->Activo ? 'Sí' : 'No' }}</td>
                     <td>{{ $servicio->Precio }}</td>
                     <td>
-                        <a href="{{ route('servicios.show', $servicio->ID_Servicio) }}" class="btn btn-info btn-sm">Ver</a>
-                        <a href="{{ route('servicios.edit', $servicio->ID_Servicio) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ route('servicios.show', $servicio->ID_Servicio) }}" class="btn btn-info btn-sm btn-custom">Ver</a>
+                        <a href="{{ route('servicios.edit', $servicio->ID_Servicio) }}" class="btn btn-warning btn-sm btn-custom">Editar</a>
                         <form action="{{ route('servicios.destroy', $servicio->ID_Servicio) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de querer eliminar este servicio?')">Eliminar</button>
+                            <button type="submit" class="btn btn-danger btn-sm btn-custom" onclick="return confirm('¿Estás seguro de querer eliminar este servicio?')">Eliminar</button>
                         </form>
                     </td>
                 </tr>

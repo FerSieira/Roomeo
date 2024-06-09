@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class HabitacionesController extends Controller {
     public function index() {
-        $habitaciones = Habitacion::all();
+        $habitaciones = Habitacion::paginate(10);
         return view('habitaciones.index', compact('habitaciones'));
     }
 

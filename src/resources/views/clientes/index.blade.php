@@ -3,8 +3,16 @@
 @section('content')
 <div class="container">
     <h1>Clientes</h1>
-    <a href="{{ route('clientes.create') }}" class="btn btn-primary">Crear Nuevo Cliente</a>
-    <a href="{{ route('acompanantes.index') }}" class="btn btn-secondary">Ver Acompañantes</a>
+
+    <style>
+        .btn-custom {
+            min-width: 100px;
+            text-align: center;
+        }
+    </style>
+
+    <a href="{{ route('clientes.create') }}" class="btn btn-primary btn-custom">Crear Nuevo Cliente</a>
+    <a href="{{ route('acompanantes.index') }}" class="btn btn-secondary btn-custom">Ver Acompañantes</a>
 
     <form method="GET" action="{{ route('clientes.index') }}" class="mt-3">
         <div class="row mb-3">
@@ -18,7 +26,7 @@
                 <input type="text" class="form-control" name="dni" placeholder="Buscar por DNI" value="{{ request('dni') }}">
             </div>
             <div class="col">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button type="submit" class="btn btn-primary btn-custom">Buscar</button>
             </div>
         </div>
     </form>
@@ -41,18 +49,16 @@
                 <td>{{ $cliente->Apellidos }}</td>
                 <td>{{ $cliente->DNI }}</td>
                 <td>
-                    <a href="{{ route('clientes.show', $cliente->ID_Cliente) }}" class="btn btn-info">Ver</a>
-                    <a href="{{ route('clientes.edit', $cliente->ID_Cliente) }}" class="btn btn-primary">Editar</a>
-                    <form action="{{ route('clientes.destroy', $cliente->ID_Cliente) }}" method="POST" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de querer eliminar este cliente?')">Eliminar</button>
-                    </form>
+                    <a href="{{ route('clientes.show', $cliente->ID_Cliente) }}" class="btn btn-info btn-custom">Ver</a>
+                    <a href="{{ route('clientes.edit', $cliente->ID_Cliente) }}" class="btn btn-primary btn-custom">Editar</a>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex justify-content-center">
+        {{ $clientes->appends(request()->query())->links() }}
+    </div>
 </div>
 @endsection
-

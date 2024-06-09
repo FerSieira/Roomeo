@@ -17,7 +17,7 @@ class ReservaServiciosController extends Controller {
             $query->where('Dia_Hora', '>=', now());
         }
 
-        $reservaServicios = $query->get();
+        $reservaServicios = $query->paginate(10);
 
         return view('reserva_servicios.index', compact('reservaServicios'));
     }

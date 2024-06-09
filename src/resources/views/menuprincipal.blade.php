@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Bienvenido a Roomeo</h1>
+    <h1>Bienvenido a Roomson</h1>
 
     <div class="row mb-4">
         <div class="col-md-12">

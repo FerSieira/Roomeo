@@ -22,7 +22,7 @@ class ClientesController extends Controller {
             $query->where('DNI', 'like', '%' . $request->dni . '%');
         }
     
-        $clientes = $query->get();
+        $clientes = $query->paginate(10);
     
         return view('clientes.index', compact('clientes'));
     }
@@ -39,7 +39,7 @@ class ClientesController extends Controller {
             'DNI' => 'required|string|max:255|unique:clientes,DNI',
             'Nacionalidad' => 'required|string|max:255',
             'Telefono' => 'required|string|max:255',
-            'Fecha_nacimiento' => 'required|date',
+            'Fecha_nacimiento' => 'required|date|before_or_equal:today',
             'Email' => 'required|string|email|max:255|unique:clientes,Email',
             'Direccion' => 'required|string|max:255',
             'Codigo_Postal' => 'required|string|max:255',
@@ -71,7 +71,7 @@ class ClientesController extends Controller {
             'DNI' => 'required|string|max:255|unique:clientes,DNI,' . $cliente->ID_Cliente . ',ID_Cliente',
             'Nacionalidad' => 'required|string|max:255',
             'Telefono' => 'required|string|max:255',
-            'Fecha_nacimiento' => 'required|date',
+            'Fecha_nacimiento' => 'required|date|before_or_equal:today',
             'Email' => 'required|string|email|max:255|unique:clientes,Email,' . $cliente->ID_Cliente . ',ID_Cliente',
             'Direccion' => 'required|string|max:255',
             'Codigo_Postal' => 'required|string|max:255',

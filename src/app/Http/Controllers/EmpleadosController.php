@@ -7,7 +7,7 @@ use App\Models\Empleado;
 
 class EmpleadosController extends Controller {
     public function index() {
-        $empleados = Empleado::all();
+        $empleados = Empleado::paginate(10);
         return view('empleados.index', compact('empleados'));
     }
 

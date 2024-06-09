@@ -25,7 +25,7 @@ class FacturasController extends Controller {
             $query->whereDate('Fecha_Pago', $request->fecha_pago);
         }
 
-        $facturas = $query->orderBy('Fecha_Pago', 'desc')->get();
+        $facturas = $query->orderBy('Fecha_Pago', 'desc')->paginate(10);
 
         return view('facturas.index', compact('facturas'));
     }

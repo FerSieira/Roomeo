@@ -23,7 +23,7 @@ class AcompanantesController extends Controller {
             $query->where('DNI', 'like', '%' . $request->dni . '%');
         }
     
-        $acompanantes = $query->get();
+        $acompanantes = $query->paginate(10);
     
         return view('acompanantes.index', compact('acompanantes'));
     }
