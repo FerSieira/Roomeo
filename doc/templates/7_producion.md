@@ -14,18 +14,18 @@
 
 * Copias de seguridade do sistema.
 * Copias de seguridade da base de datos.
-* Xestión de usuarios.
-* Xestión seguridade.
+* Los usuarios serán gestionados por el administrador de la base de datos o desde la propia aplicación por el gerente.
+* La seguridad en cuanto a las contraseña es que tendrán un hash para estar mejor protegidas.
 
 ### Información relativa ó matemento do sistema
 
 * Especifica o sistema para mellorar e corrixir os erros detectados.
-* Xestión de incidencias: como se atenderán e resolverán. Indica como poderán os usuarios comunicar as incidencias.
+* Los usuarios podrán llamarnos para comunicarnos sus incidencias e intentaremos prestarles ayuda telefónica, que de no se suficiente pasaría a ser ayuda en físico desplazandonos a su ubicación.
 
 # Manual de usuario
 
 ### Formación de usuarios 
-* Indicar se será necesario formar ós usuarios. En caso afirmativo planificar e xustificar.
+* No se requerirá una formación de los usuarios ya que la aplicación busca ser intuitiva y deberían poder adaptarse a ella con facilidad.
 
 ### Instrucións iniciais
 * Elabora un manual breve coa información necesaria para o uso da aplicación.
