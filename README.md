@@ -53,7 +53,13 @@ La licencia utilizada para el proyecto es: [GNU General Public License](LICENSE)
 
 ## Guía de contribución
 
-> *TODO*: Tratándose de un proyecto de software libre, es muy importante que expongas cómo se puede contribuir con tu proyecto. Algunos ejemplos de esto son realizar nuevas funcionalidades, corrección y/u optimización del código, realización de test automatizados, nuevas interfaces de integración, desarrollo de plugins, etc. etc. Sé lo más conciso que puedas.
+Se puede contribuir a este proyecto de distintas maneras:
+
+- Reportando errores que te encuentres abriendo un issue informando donde se encuentra el problema y que pasos hay que seguir para replicarlo.
+
+- Corrigiendo errores u optimizando el código haciendo forks del respositorio  y enviando un pull request una vez hayas implementado tu solución, explicando que hace y como mejora el código.
+
+- Contribuyendo en el desarrollo de nuevas interfaces de integración para otros sistema, uno de alta prioridad serían los sistemas de pago.
 
 ## Links
 
