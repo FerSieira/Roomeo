@@ -70,15 +70,19 @@ En el caso de los usuarios administradores también podrán entrar a los apartad
 ### FAQ
 
 **¿Por qué no salen habitaciones cuando creo una habitación?**
+
 Asegúrate de seleccionar primero las fechas y luego seleccionar el tipo de habitación.
 
 **¿Cómo puedo cambiar mi contraseña?**
+
 Esta función sólo se encuentra disponible para los usuarios con permisos de administrador. Contacta con tu superior para que te permita modificar tu contraseña. 
 
 **¿Por qué no encuentro a un cliente en el listado de clientes?**
+
 Prueba a buscar en la sección de Ver Acompañantes ya que el sistema realiza distinciones entre si un cliente se ha hospedado como cliente o como acompañante.
 
 **¿Por qué no encuentro una habitación en el listado de habitaciones de reservas?**
+
 Las habitaciones deben encontrarse en estado ‘libre’ si se encuentran ocupadas o sucias no aparecerán en el listado de habitaciones disponibles.
 
 # Protección de datos de carácter persoal
