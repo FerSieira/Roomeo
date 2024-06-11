@@ -1,7 +1,7 @@
-# REQUIRIMENTOS DO SISTEMA
-Este documento describe los requerimientos para Aplicación web para Gestión hotelera especificando qué funcionalidad ofrece y de qué forma.
+# REQUISITOS DEL SISTEMA
+Este documento describe los requerimientos para Aplicación web para gestión hotelera especificando qué funcionalidad ofrece y de qué forma.
 
-## Descrición Xeral
+## Descripción General
 
 El proyecto tiene como objetivo desarrollar un sistema de gestión hotelera web o PMS.
 Esta aplicación estará diseñada para ofrecer una solución para la gestión de reservas, clientes y habitaciones para hoteles de todos los tamaños y categorías. El enfoque principal es hacer que el sistema sea lo más intuitivo y fácil de usar para los trabajadores del hotel.
@@ -10,7 +10,7 @@ El sistema permitirá que los hoteles se suscriban al servicio y que obtengan un
 Desde esta cuenta, el administrador del hotel podrá gestionar el acceso para el resto del personal, y también acceder a las diversas funciones del sistema.
 
 Los recepcionistas podrán realizar sus diferentes tareas como gestionar reservas, hacer el check-in y check-out de clientes, así como introducir y actualizar la información de los clientes de ser necesario.
-El personal de limpieza podrá actualizar el estado de las habitaciones una vez limpias. Además, el sistema incluirá funciones para generar informes para la gestión del hotel, como informes de revenue management, ocupación por rango de edad o país de origen de los huéspedes.
+El personal de limpieza podrá actualizar el estado de las habitaciones una vez limpias. Además, el sistema incluirá funciones para crear los usuarios de nuevos empleados, así como un apartado de Tarifas donde crearlas y gestionarlas.
 
 Mi objetivo final con este proyecto es proporcionar una herramienta fácil de usar e intuitiva, que cubra las necesidades esenciales para ayudar a los hoteles, en especial a sus trabajadores, y a mejorar su eficiencia.
 
@@ -29,13 +29,11 @@ Gestión de habitaciones: los recepcionistas deben poder asignar, ver el estado,
 
 Administración de personal: en este apartado la cuenta con permisos de administrador que usa el hotel se encargará de asignar nuevos usuarios a los trabajadores que se incorporen y asignarles su rol de recepción o pisos.
 
-Generación de informes: esta funcionalidad quedará restringida para la persona con permisos de administrador en el hotel ya que contiene información que los gestores pueden preferir que no cualquier trabajador vea.
-
-Configuración del hotel: esto lo realizará también la persona encargada del hotel, que podrá por ejemplo ajustar a partir de que hora se cobra más caro el hacer late check-out o ciertos aspectos a configurar del hotel.
+Generación de facturas: esta funcionalidad se activará automaticamente cuando hagamos el check-out de una reserva.
 
 Crear y aplicar servicios: todos los hoteles tendrán un apartado propio de servicios en los que como puede variar tanto por ejemplo un hotel con servicio lavandería podrá añadir que tiene ese servicio con su precio correspondiente y después usarlo en facturación, esto lo hará el gestor. En lo que a su uso respecta eso lo llevarán los trabajadores del hotel, el añadir el consumo de los distintos servicios del hotel.
 
-## Requerimentos non funcionais
+## Requisitos no funcionales
 Todas las contraseñas de usuarios y administradores deben ser transmitidas de forma encriptada durante el proceso de inicio de sesión para proteger contra riesgos de seguridad.
 
 ## Tipos de usuarios
@@ -48,28 +46,26 @@ Entre los distintos tipos de usuarios que pueden acceder al sistema tenemos:
  - Tendrá acceso completo al sistema dentro de su apartado hotel.
  - Podrá gestionar las configuraciones del hotel.
  - Tendrá la capacidad de añadir y gestionar los usuarios asignando roles y permisos.
- - Podrá generar informes detallados sobre la ocupación, ingresos, ...
+ - Podrá crear nuevos perfiles a los empleados que se incorporen, ...
 3. Recepcionistas:
  - Podrán acceder a las funciones relacionadas con gestión de reservas y clientes.
  - Serán capaces de realizar check-in y check-out de los clientes.
  - Podrán acceder a la información de los clientes y actualizarla.
- - No tendrán acceso a la configuración del hotel o informes avanzados.
+ - No tendrán acceso a la configuración del hotel.
 4. Personal de limpieza:
  - Tendrán acceso limitado para actualizar el estado de las habitaciones una vez limpias.
  - No podrán acceder a las funciones de gestión de reservas o clientes.
 
-## Avaliación da viabilidade técnica do proxecto
+## Evaluación de la viabilidad técnica del proyecto
 
 ### Hardware requerido
 Para llevar a cabo mi proyecto, a nivel hardware será necesario contar con un servidor web en el que poder alojar mi aplicación web. También necesitaré conexión a internet estable para poder realizar cualquier cambio o actualización necesaria al proyecto ya que es web.
 
 Por el lado de los usuarios, necesitarán un ordenador con conexión a internet, ya que a diferencia de algunas apps instalables que existen al ser una aplicación web precisa de acceso a internet para usarla.
 
-
 ### Software
 A nivel desarrollo necesitaré el framework de Laravel, lo he elegido porque ya estoy más familiarizado con él, tiene una comunidad bastante activa y cuenta con una extensa documentación que me ayudará a la hora de encontrarme con problemas durante el desarrollo.
 El usuario que utilice la aplicación web no tiene grandes requisitos, al ser una aplicación web el sistema operativo que utilice no debería ser un gran problema. El único factor a tener en cuenta es la compatibilidad de la aplicación con ciertos navegadores, Mozilla, Edge y Chrome son las opciones más seguras para que la aplicación funcione de forma correcta.
-
 
 ## Interfaces externos
 En caso dun proxecto orientado ao desenvolvemento de software, indicar (se procede) como se comunicará o noso software co exterior. É posible que só teña interfaces de usuario, que normalmente son as pantallas. Un exemplo de interface hardware sería un lector de código de barras. As interfaces software son aquelas que se comunican con outro software, como por exemplo un servicio web ao que se conectan aplicacións cliente.
@@ -80,7 +76,6 @@ Las interfaces de usuario son el principal punto de mi proyecto. Al introducir l
 Una vez dentro de la aplicación el usuario tendrá la interfaz de menú principal con la información principal para darse cuenta de un golpe de vista de la situación del hotel.
 En la barra lateral que tendrá a la izquierda tendrá los apartados de Reservas, Estancias, Clientes, Habitaciones, Informes y Facturación, en estos apartados podrán los usuarios gestionar esos aspectos de su hotel, con ciertas limitaciones dependiendo de sus privilegios en el sistema.
 
-
 ### Interfaces hardware
 
 En lo que a mi sistema de gestión hotelera respecta, no habrá necesidad de interfaces hardware específicas. Aunque sería interesante la integración del sistema con dispositivos externos para el cobro como de punto de venta TPV o lectores de tarjeta.
@@ -89,7 +84,7 @@ En lo que a mi sistema de gestión hotelera respecta, no habrá necesidad de int
 
 Por ahora no necesito ninguna interfaz software ya que mi aplicación no se comunica con otro sistema o servicio externo.
 
-## Análise de riscos e interesados
+## Análisis de riesgos e interesados
 
 Creo que ya que estoy mezclando mi experiencia en turismo y programación sería adecuado utilizar para este apartado de riesgos algo que estudiamos en  el módulo de marketing que es un análisis DAFO en el que estudiamos las Debilidades, Amenazas, Fortalezas y Oportunidades que existen en nuestro proyecto y para todos aquellos aspectos negativos intentar paliarlos en menor o mayor medida.
 
@@ -115,6 +110,7 @@ Otra amenaza son los cambios legislativos en el sector, ante los cuales debemos 
 8. Desarrollo de la funcionalidad de las interfaces para trabajadores del hotel.
 9. Revisión y encriptación de campos vulnerables.
 
-## Melloras futuras
-Las posibles mejoras aún no están definidas ya que no sé hasta qué punto del proyecto podré llegar. 
+## Mejoras futuras 
 Por ahora algunas de ellas serían, la integración del sistema con dispositivos de cobro para poder hacer el apartado de Facturación más eficaz y con mayor usabilidad.
+Un apartado donde poder generar informes de ocupación.
+La opción de que las tarifas se apliquen de forma automática en base a las fechas, ocupación y tipo de habitación seleccionados.
