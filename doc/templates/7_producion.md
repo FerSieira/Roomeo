@@ -49,11 +49,37 @@ chmod -R 775 /home/forge/default/src/storage /home/forge/default/src/bootstrap/c
 * No se requerirá una formación de los usuarios ya que la aplicación busca ser intuitiva y deberían poder adaptarse a ella con facilidad.
 
 ### Instrucións iniciais
-* Elabora un manual breve coa información necesaria para o uso da aplicación.
+
+Inicia sesión con tu correo y contraseña proporcionados por tu superior.
+
+En el apartado Reservas podrás crear, modificar, ver y eliminar reservas. También podrás realizar el check-in y check-out pulsando el botón correspondiente en este índice.
+El personal del departamento de pisos podrá ir a este índice y pulsar el botón Limpiar una vez hayan hecho check-out para cambiar el estado de las habitaciones.
+
+En el apartado habitaciones se podrá modificar el estado de las habitaciones así como modificar información acerca de estas o en caso de reformas en el hotel y que se aumente la cantidad de habitaciones podrán añadir más habitaciones.
+
+En el apartado Clientes podrán consultar los clientes y acompañantes que se encuentran en dos subapartados distintos.
+
+En el apartado Servicios podrán crear un nuevo servicio o desactivar uno que el hotel haya dejado de prestar.
+
+Reservas Servicios será el apartado donde se realizarán la reserva de servicios como por ejemplo si un huésped desea utilizar el servicio de lavandería o utilizar el spa si este fuese de pago.
+
+En facturas podrán revisar las facturas de las reservas una vez esta se haya finalizado.
+
+En el caso de los usuarios administradores también podrán entrar a los apartados Tarifas y Empleados donde podrán modificar o crear nuevas tarifas. Y en el caso del apartado Empleados será donde el administrador de de alta a nuevos trabajadores para que puedan usar el sistema y modificar sus datos si por ejemplo desean cambiar su contraseña.
 
 ### FAQ
 
-* Elabora unha serie de preguntas e respostas habituais a modo de axuda para os usuarios.
+**¿Por qué no salen habitaciones cuando creo una habitación?**
+Asegúrate de seleccionar primero las fechas y luego seleccionar el tipo de habitación.
+
+**¿Cómo puedo cambiar mi contraseña?**
+Esta función sólo se encuentra disponible para los usuarios con permisos de administrador. Contacta con tu superior para que te permita modificar tu contraseña. 
+
+**¿Por qué no encuentro a un cliente en el listado de clientes?**
+Prueba a buscar en la sección de Ver Acompañantes ya que el sistema realiza distinciones entre si un cliente se ha hospedado como cliente o como acompañante.
+
+**¿Por qué no encuentro una habitación en el listado de habitaciones de reservas?**
+Las habitaciones deben encontrarse en estado ‘libre’ si se encuentran ocupadas o sucias no aparecerán en el listado de habitaciones disponibles.
 
 # Protección de datos de carácter persoal
 
