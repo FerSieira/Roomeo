@@ -1,6 +1,6 @@
-# ESTUDO DE NECESIDADES E MODELO DE NEGOCIO
+# ESTUDIO DE NECESIDADES Y MODELO DE NEGOCIO
 
-## Xustificación das necesidades detectadas que cubre o sistema a desenvolver
+## Justificación de las necesidades detectadas que cubre el sistema a desarrollar
 
 Este proyecto aborda la necesidad de mejorar la gestión operativa y administrativa de los hoteles mediante la implementación de un sistema de gestión hotelera web, PMS. Se pretende ofrecer una solución integral que permita a los hoteles gestionar reservas, clientes y habitaciones de manera eficiente y sencilla. Todo esto a la vez que también nos centramos en hacerlo lo más intuitivo que podamos.
 
@@ -21,10 +21,9 @@ Para realizar el proyecto con éxito, sólo se necesita una persona con ciertos 
 
 Cuento con un tiempo estimado de 125 horas para la realización del trabajo, según el cronograma proporcionado por el centro.
 
-Estimo que con el tiempo disponible, sería factible entregar una demo que incluya la mayoría de las funcionalidades relacionadas con reservas, gestión de clientes y habitaciones. Sin embargo, es importante destacar que la generación de informes estaría limitada en este periodo. Podría proporcionar informes básicos relacionados con el revenue management y la capacidad del hotel, así como niveles de alojamiento simples. Pero para elaborar informes más detallados, que sean útiles en situaciones reales y que cumplan con los requisitos fiscales completos del hotel, sería necesario invertir un mínimo de 300 horas.
+Estimo que con el tiempo disponible, sería factible entregar una demo que incluya la mayoría de las funcionalidades relacionadas con reservas, gestión de clientes y habitaciones.
 
-
-## Posibilidades de comercialización (viabilidade, competidores…).
+## Posibilidades de comercialización (viabilidad, competidores…).
 
 En lo que a viabilidad técnica respecta, es posible disponer de los recursos humanos y medios necesarios ya que tan sólo necesitamos un ordenador, una persona para el desarrollo, el software utilizado para desarrollar el programa es gratuíto y en caso de querer hacer el desarrollo completo y no solo una demo en local necesitaríamos un servidor web y un dominio.
 Por otro lado tenemos la viabilidad económica del proyecto. Los beneficios del proyecto superaran los costes, ya que el proyecto se desarrollará con recursos mínimos y el precio de usar un servidor web al mes y el dominio no superaría los 40 euros. Si el número de clientes aumenta, nuestros ingresos también lo harán, lo que compensará cualquier costo adicional. En caso de pérdidas, podrían ser cubiertas mediante financiamiento público si decidimos continuar con el proyecto.
@@ -32,9 +31,7 @@ Por otro lado tenemos la viabilidad económica del proyecto. Los beneficios del 
 La competencia consiste en otros sistemas de gestión hotelera existentes en el mercado como Cloudbeds, Oracle Hospitality, Protel, …
 Existen productos y servicios sustitutivos, pero se busca ofrecer un producto diferenciado y adaptado a las necesidades específicas de los hoteles. Y que la sencillez y lo intuitivo de nuestro programa sea lo que nos diferencie.
 
-
-
-## Ideas para a súa comercialización.
+## Ideas para su comercialización.
 
 De cara a la promoción del PMS planeo promocionarlo mediante varios canales, como redes sociales, participación en eventos en la zona, pero principalmente negociaciones directas con potenciales clientes. En el caso de la empresa donde realizo las FCT no es un PMS, pero cuentan con un ERP para hoteles, y uno de sus métodos de comercialización es contactar con las pequeñas y medianas empresas cercanas que pueden necesitar de estos servicios y que nuestra proximidad y conocimiento de la región puede resultarles más de confianza que un sistema internacional como Oracle Hospitality que les resultaría menos personal. Creo que la venta directa y ofrecer las ventajas de nuestro sistema directamente al hotel es la forma más fácil de que nos lleguen a conocer.
 
