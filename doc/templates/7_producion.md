@@ -35,14 +35,13 @@ chmod -R 775 /home/forge/default/src/storage /home/forge/default/src/bootstrap/c
 
 ### Información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando, como por exemplo
 
-* Copias de seguridade do sistema.
 * Para las copias de seguridad en mi caso puedo contratar este servicio con DigitalOcean o Forge. Aunque también existe la posibilidad de hacer copias de seguridad manualmente.
 * Los usuarios serán gestionados por el administrador de la base de datos o desde la propia aplicación por el gerente.
 * La seguridad en cuanto a las contraseña es que tendrán un hash para estar mejor protegidas.
 
 ### Información relativa ó matemento do sistema
 
-* Los usuarios podrán llamarnos para comunicarnos sus incidencias e intentaremos prestarles ayuda telefónica, que de no se suficiente pasaría a ser ayuda en físico desplazandonos a su ubicación.
+* Los usuarios podrán llamarnos para comunicarnos sus incidencias e intentaremos prestarles ayuda telefónica, que de no ser suficiente pasaría a ser ayuda en físico desplazándonos a su ubicación.
 
 # Manual de usuario
 
