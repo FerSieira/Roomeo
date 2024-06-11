@@ -36,7 +36,8 @@ php artisan route:cache
 php artisan view:cache
 
 chown -R forge:www-data /home/forge/default/src
-chmod -R 775 /home/forge/default/src/storage /home/forge/default/src/bootstrap/cache ```
+chmod -R 775 /home/forge/default/src/storage /home/forge/default/src/bootstrap/cache 
+```
 
 ### Información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando, como por exemplo
 
