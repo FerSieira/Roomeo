@@ -1,10 +1,10 @@
-# FASE DE PLANIFICACIÓN DO PROXECTO
+# FASE DE PLANIFICACIÓN DEL PROYECTO
 
-## Obxectivos do proxecto
+## Objetivos del proyecto
 
-## Guía de planificación do proxecto
+## Guía de planificación del proyecto
 
-### Metodoloxía
+### Metodología
 
 La metodología que he decidido utilizar para el desarrollo de la aplicación es el modelo en cascada. Es el modelo más simple y sencillo de utilizar. A pesar de que tiene ciertas desventajas como que dificulta el volver atrás en el proyecto y tiene un nivel de riesgo mayor que las otras metodologías creo que es el más conveniente. Su facilidad de uso y su rigidez nos ayuda a asegurarnos de que alcanzamos los resultados específicos en cada fase. Debido al ritmo que tenemos en este proyecto en el que vamos entregando la idea, el análisis, etc., en un orden bastante marcado esto lo hace muy similar al modelo cascada, donde para pasar a la siguiente fase debemos tener la anterior finalizada. 
 Además es una metodología que se adecua a como quiero llevar el desarrollo, primero planearlo todo bien y después ejecutarlo y en caso de que haya algo que no se corresponde volver atrás, replantear y volver a hacerlo. Es más tedioso pero a la vez, nos ayuda a intentar dejar el menor número de aspectos al azar y tener el proyecto bien planificado.
@@ -72,7 +72,7 @@ Duración: 15h.
 ### Diagrama de Gantt
 ![Diagrama de Gantt](doc/img/Gantt.png)
 
-## Orzamento
+## Presupuesto
 
 El cálculo  presupuestario de este proyecto se ha realizado teniendo en cuenta los siguientes gastos e inversiones:
 - El programador cobrará 15.50 euros/hora teniendo en cuenta el salario medio de un programador en España. Siendo la duración de este 160 horas el resultado sería 2480 €.
@@ -82,7 +82,7 @@ El cálculo  presupuestario de este proyecto se ha realizado teniendo en cuenta 
 - Necesitaríamos conexión a internet que por ejemplo R nos ofrece fibra óptica desde 39,99 euros al mes.
 - Y por último el alquiler del servidor web donde alojaremos nuestra aplicación sería de unos 11€/mes en Dinahosting.
 
-### Orzamento por partidas de inversión / gasto:
+### Presupuesto por partidas de inversión / gasto:
 
 | CONCEPTO | IMPORTE|
 |--|--|
@@ -97,7 +97,7 @@ El cálculo  presupuestario de este proyecto se ha realizado teniendo en cuenta 
 |Alquiler Servidor Web | 11 euros |
 |**TOTAL GASTOS:** | 2.575,8 euros |
 
-|TOTAL ORZAMENTO:
+|TOTAL PRESUPUESTO:
 |--|
 |4.465,8|
 ### WEBGRAFÍA
