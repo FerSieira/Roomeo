@@ -17,14 +17,14 @@ class Empleado extends Authenticatable
         'Apellidos',
         'Departamento',
         'Usuario',
-        'Contraseña',
+        'Contrasena',
         'Telefono',
         'Email',
         'Rol',
     ];
 
     protected $hidden = [
-        'Contraseña',
+        'Contrasena',
         'remember_token',
     ];
 
@@ -34,6 +34,6 @@ class Empleado extends Authenticatable
 
     public function getAuthPassword()
     {
-        return $this->Contraseña;
+        return $this->Contrasena;
     }
 }
