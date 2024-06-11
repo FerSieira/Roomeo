@@ -84,6 +84,14 @@
             <legend class="w-auto px-2">Información de la Reserva</legend>
 
             <div class="mb-3">
+                <label for="Fecha_Llegada">Fecha de Llegada</label>
+                <input type="date" class="form-control" id="Fecha_Llegada" name="Fecha_Llegada" required>
+            </div>
+            <div class="mb-3">
+                <label for="Fecha_Salida">Fecha de Salida</label>
+                <input type="date" class="form-control" id="Fecha_Salida" name="Fecha_Salida" required>
+            </div>
+            <div class="mb-3">
                 <label for="ID_Tipo_Hab">Tipo de Habitación</label>
                 <select class="form-control" id="ID_Tipo_Hab" name="ID_Tipo_Hab" onchange="cargaHabs()">
                     <option value="">Seleccione un tipo de habitación</option>
@@ -105,14 +113,6 @@
                         <option value="{{ $tarifa->ID_Tarifa }}">{{ $tarifa->DescripcionTar }} - Desde: {{ $tarifa->Desde }} Hasta: {{ $tarifa->Hasta }} Precio: {{ $tarifa->Precio }}</option>
                     @endforeach
                 </select>
-            </div>
-            <div class="mb-3">
-                <label for="Fecha_Llegada">Fecha de Llegada</label>
-                <input type="date" class="form-control" id="Fecha_Llegada" name="Fecha_Llegada" required>
-            </div>
-            <div class="mb-3">
-                <label for="Fecha_Salida">Fecha de Salida</label>
-                <input type="date" class="form-control" id="Fecha_Salida" name="Fecha_Salida" required>
             </div>
             <div class="mb-3">
                 <label for="Adultos">Adultos</label>
