@@ -1,14 +1,14 @@
-# DESEÑO
+# DISEÑO
 
-## Deseño do proxecto
+## Diseño del proyecto
 
 > *TODO*: Elabora os diagramas e modelos que consideres necesarios. Nesta fase, debes documentar toda a idea do proxecto a nivel de deseño de forma que elabores unha "imaxe" que permita saber con certo detalle como será o resultado da implementación. 
 
-### Modelo conceptual do dominio da aplicación e/ou Diagrama de clases [usando UML, ConML, ou linguaxe semellante].
+### Modelo conceptual del dominio de la aplicación y/o Diagrama de clases [usando UML, ConML, o lenguaje similar].
 
 ![Diagrama de clases](doc/img/UMLPMS.png)
 
-### Casos de uso [descritos en fichas e/ou mediante esquemas; deben incluír os actores (tipos de usuarios) implicados en cada caso de uso].
+### Casos de uso [descritos en fichas y/o mediante esquemas; deben incluír los actores (tipos de usuarios) implicados en cada caso de uso].
 
 A continuación muestro los diagrama de casos de uso para los distintos actores junto con las fichas de las acciones en cada uno de los casos:
 
@@ -39,14 +39,14 @@ Y el segundo es un diagrama general de la base de datos utilizando phpMyAdmin pa
 
 ### Diagrama de compoñentes software que constitúen o produto e de despregue.
 
-### Diagrama de despregamento
+### Diagrama de despliegue
 
 Este es el diagrama de despliegue de la aplicación. Tiene en cuenta que los usuarios se pueden conectar a la dirección URL desde móvil u ordenador, se conectarán al navegador web hosteado en un servidor donde Eloquent ORM y la aplicación se comunicarán con la base de datos.
 
 ![Diagrama de despliegue](doc/img/Despliegue.png)
 
-### Outros diagramas, esquemas ou documentacion (seguridade, redundancia, expliacións, configuracións...)
+### Otros diagramas, esquemas o documentacion (seguridade, redundancia, expliacións, configuracións...)
 
-## Calidade
+## Calidad
 
 > *TODO*: Identifica os aspectos que compre controlar para garantir a calidade do proxecto, determinando os procedementos de actuación ou execución das actividades, establecendo un sistema para garantir o cumprimento das condicións do proxecto (requisitos, funcionalidades...)
