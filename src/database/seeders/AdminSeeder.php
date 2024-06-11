@@ -19,7 +19,7 @@ class AdminSeeder extends Seeder
             'Apellidos' => 'Usuario',
             'Departamento' => 'Recepcion',
             'Usuario' => 'Admin',
-            'Contraseña' => Hash::make('VhzTmdYfg31.'),
+            'password' => Hash::make('VhzTmdYfg31.'),
             'Telefono' => '999999999',
             'Email' => 'admin@roomeo.es',
             'Rol' => 'administrador',

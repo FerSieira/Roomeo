@@ -26,8 +26,8 @@
             <input type="text" class="form-control" id="Usuario" name="Usuario" value="{{ $empleado->Usuario }}" required>
         </div>
         <div class="mb-3">
-            <label for="Contraseña" class="form-label">Contraseña (dejar en blanco para mantener la actual)</label>
-            <input type="password" class="form-control" id="Contraseña" name="Contraseña">
+            <label for="password" class="form-label">Contraseña (dejar en blanco para mantener la actual)</label>
+            <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="mb-3">
             <label for="Telefono" class="form-label">Teléfono</label>

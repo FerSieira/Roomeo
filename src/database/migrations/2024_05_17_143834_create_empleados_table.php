@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('Apellidos');
             $table->enum('Departamento', ['Recepcion', 'Pisos']);
             $table->string('Usuario')->unique();
-            $table->string('Contraseña');
+            $table->string('password');
             $table->string('Telefono');
             $table->string('Email')->unique();
             $table->enum('Rol', ['usuario', 'administrador']);

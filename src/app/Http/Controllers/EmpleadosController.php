@@ -21,13 +21,13 @@ class EmpleadosController extends Controller {
             'Apellidos' => 'required|max:255',
             'Departamento' => 'required|in:Recepcion,Pisos',
             'Usuario' => 'required|unique:empleados,Usuario',
-            'Contraseña' => 'required|min:8',
+            'password' => 'required|min:8',
             'Telefono' => 'required|max:20',
             'Email' => 'required|email|unique:empleados,Email',
             'Rol' => 'required|in:usuario,administrador',
         ]);
 
-        $request->merge(['Contraseña' => bcrypt($request->Contraseña)]);
+        $request->merge(['password' => bcrypt($request->password)]);
 
         Empleado::create($request->all());
 
@@ -48,16 +48,16 @@ class EmpleadosController extends Controller {
             'Apellidos' => 'required|max:255',
             'Departamento' => 'required|in:Recepcion,Pisos',
             'Usuario' => 'required|unique:empleados,Usuario,' . $empleado->ID_Empleado . ',ID_Empleado',
-            'Contraseña' => 'nullable|min:8',
+            'password' => 'nullable|min:8',
             'Telefono' => 'required|max:20',
             'Email' => 'required|email|unique:empleados,Email,' . $empleado->ID_Empleado . ',ID_Empleado',
             'Rol' => 'required|in:usuario,administrador',
         ]);
 
-        if ($request->filled('Contraseña')) {
-            $request->merge(['Contraseña' => bcrypt($request->Contraseña)]);
+        if ($request->filled('password')) {
+            $request->merge(['password' => bcrypt($request->password)]);
         } else {
-            $request->request->remove('Contraseña');
+            $request->request->remove('password');
         }
 
         $empleado->update($request->all());

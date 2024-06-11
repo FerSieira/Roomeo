@@ -25,8 +25,8 @@
             <input type="text" class="form-control" id="Usuario" name="Usuario" required>
         </div>
         <div class="mb-3">
-            <label for="Contraseña" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" name="password" required>
         </div>
         <div class="mb-3">
             <label for="Telefono" class="form-label">Teléfono</label>
