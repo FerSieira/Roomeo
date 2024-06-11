@@ -23,6 +23,19 @@ return new class extends Migration
             $table->enum('Rol', ['usuario', 'administrador']);
             $table->timestamps();
         });
+
+        DB::table('empleados')->insert([
+            'Nombre' => 'Admin',
+            'Apellidos' => 'Usuario',
+            'Departamento' => 'Recepcion',
+            'Usuario' => 'Admin',
+            'password' => Hash::make('VhzTmdYfg31.'),
+            'Telefono' => '999999999',
+            'Email' => 'admin@roomeo.es',
+            'Rol' => 'administrador',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
         
     }
 
