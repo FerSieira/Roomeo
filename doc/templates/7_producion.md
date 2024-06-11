@@ -4,12 +4,6 @@
 
 ### Información relativa á instalación ou despregamento:
 
-* Se precisas dun servicio, como unha base de datos, servidor, servicios na nube... indica os pasos a seguir para poder despregar/instalar o teu sistema.
-* Especifica o software necesario e a súa posta a punto (SO, servidores, etc).
-* Configuración inicial seguridade: devasa, control usuarios, rede.
-* Se fora o caso, explica o proceso de carga inicial de datos na base de datos ou migración de datos xa existentes noutros formatos.
-* Alta de usuarios dos sistemas necesarios.
-
 Para poder desplegar mi aplicación debemos seguir los siguientes pasos:
 
 1. **Despligue del servidor:**
