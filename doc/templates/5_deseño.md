@@ -1,8 +1,6 @@
 # DISEÑO
 
-## Diseño del proyecto
-
-> *TODO*: Elabora os diagramas e modelos que consideres necesarios. Nesta fase, debes documentar toda a idea do proxecto a nivel de deseño de forma que elabores unha "imaxe" que permita saber con certo detalle como será o resultado da implementación. 
+## Diseño del proyecto 
 
 ### Modelo conceptual del dominio de la aplicación y/o Diagrama de clases [usando UML, ConML, o lenguaje similar].
 
@@ -21,7 +19,7 @@ Fichas:
 ![Casos Uso 3](doc/img/CasoUso3.png)
 ![Casos Uso 4](doc/img/CasoUso4.png)
 
-### Deseño de interfaces de usuarios [mockups ou diagramas...].
+### Diseño de interfaces de usuarios [mockups o diagramas...].
 
 ### Diseño de interfaces software e hardware (se aplica)
 
