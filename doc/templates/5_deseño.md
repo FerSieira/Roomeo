@@ -52,16 +52,9 @@ Y el segundo es un diagrama general de la base de datos utilizando phpMyAdmin pa
 
 ![Diagrama BD](doc/img/DiagramaBD.png)
 
-### Diagrama de compoñentes software que constitúen o produto e de despregue.
 
 ### Diagrama de despliegue
 
 Este es el diagrama de despliegue de la aplicación. Tiene en cuenta que los usuarios se pueden conectar a la dirección URL desde móvil u ordenador, se conectarán al navegador web hosteado en un servidor donde Eloquent ORM y la aplicación se comunicarán con la base de datos.
 
 ![Diagrama de despliegue](doc/img/Despliegue.png)
-
-### Otros diagramas, esquemas o documentacion (seguridade, redundancia, expliacións, configuracións...)
-
-## Calidad
-
-> *TODO*: Identifica os aspectos que compre controlar para garantir a calidade do proxecto, determinando os procedementos de actuación ou execución das actividades, establecendo un sistema para garantir o cumprimento das condicións do proxecto (requisitos, funcionalidades...)
