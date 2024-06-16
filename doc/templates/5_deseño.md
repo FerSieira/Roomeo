@@ -19,9 +19,17 @@ Fichas:
 ![Casos Uso 3](doc/img/CasoUso3.png)
 ![Casos Uso 4](doc/img/CasoUso4.png)
 
-### Diseño de interfaces de usuarios [mockups o diagramas...].
+### Diseño de interfaces de usuarios.
 
-### Diseño de interfaces software e hardware (se aplica)
+![Dashboard](doc/img/Dashboard.png)
+![Reservas](doc/img/ReservasIndex.png)
+![Servicios](doc/img/Servicios.png)
+![RsvServicios](doc/img/RsvServicios.png)
+![Clientes](doc/img/Clientes.png)
+![Empleados](doc/img/Empleados.png)
+![Habitacion](doc/img/Habs.png)
+![Tipos Habitacion](doc/img/TipoHab.png)
+![Facturas](doc/img/Facturas.png)
 
 ### Diagrama de Base de Datos.
 
