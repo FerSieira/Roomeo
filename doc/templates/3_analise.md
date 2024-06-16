@@ -39,20 +39,17 @@ Todas las contraseñas de usuarios y administradores deben ser transmitidas de f
 ## Tipos de usuarios
 Entre los distintos tipos de usuarios que pueden acceder al sistema tenemos:
 
-1. Administrador principal:
+1. Administrador del hotel:
  - Tendrá acceso completo al sistema.
- - Tendrá un panel para gestionar el hotel y configurarlo.
-2. Administrador del hotel:
- - Tendrá acceso completo al sistema dentro de su apartado hotel.
  - Podrá gestionar las configuraciones del hotel.
  - Tendrá la capacidad de añadir y gestionar los usuarios asignando roles y permisos.
  - Podrá crear nuevos perfiles a los empleados que se incorporen, ...
-3. Recepcionistas:
+2. Recepcionistas:
  - Podrán acceder a las funciones relacionadas con gestión de reservas y clientes.
  - Serán capaces de realizar check-in y check-out de los clientes.
  - Podrán acceder a la información de los clientes y actualizarla.
  - No tendrán acceso a la configuración del hotel.
-4. Personal de limpieza:
+3. Personal de limpieza:
  - Tendrán acceso limitado para actualizar el estado de las habitaciones una vez limpias.
  - No podrán acceder a las funciones de gestión de reservas o clientes.
 
@@ -67,14 +64,11 @@ Por el lado de los usuarios, necesitarán un ordenador con conexión a internet,
 A nivel desarrollo necesitaré el framework de Laravel, lo he elegido porque ya estoy más familiarizado con él, tiene una comunidad bastante activa y cuenta con una extensa documentación que me ayudará a la hora de encontrarme con problemas durante el desarrollo.
 El usuario que utilice la aplicación web no tiene grandes requisitos, al ser una aplicación web el sistema operativo que utilice no debería ser un gran problema. El único factor a tener en cuenta es la compatibilidad de la aplicación con ciertos navegadores, Mozilla, Edge y Chrome son las opciones más seguras para que la aplicación funcione de forma correcta.
 
-## Interfaces externos
-En caso dun proxecto orientado ao desenvolvemento de software, indicar (se procede) como se comunicará o noso software co exterior. É posible que só teña interfaces de usuario, que normalmente son as pantallas. Un exemplo de interface hardware sería un lector de código de barras. As interfaces software son aquelas que se comunican con outro software, como por exemplo un servicio web ao que se conectan aplicacións cliente.
-
 ### Interfaces de usuario
 
 Las interfaces de usuario son el principal punto de mi proyecto. Al introducir la URL en el buscador la persona del hotel que esté intentando loguearse tendrá que introducir su nombre de usuario y contraseña que le ha dado el gestor del sistema en el hotel, que será el encargado de administrar las cuentas de los trabajadores del hotel.
 Una vez dentro de la aplicación el usuario tendrá la interfaz de menú principal con la información principal para darse cuenta de un golpe de vista de la situación del hotel.
-En la barra lateral que tendrá a la izquierda tendrá los apartados de Reservas, Estancias, Clientes, Habitaciones, Informes y Facturación, en estos apartados podrán los usuarios gestionar esos aspectos de su hotel, con ciertas limitaciones dependiendo de sus privilegios en el sistema.
+En en la cabecera tendrá los apartados de Reservas, Clientes, Habitaciones  y Facturación, en estos apartados podrán los usuarios gestionar esos aspectos de su hotel, con ciertas limitaciones dependiendo de sus privilegios en el sistema.
 
 ### Interfaces hardware
 
@@ -114,3 +108,4 @@ Otra amenaza son los cambios legislativos en el sector, ante los cuales debemos 
 Por ahora algunas de ellas serían, la integración del sistema con dispositivos de cobro para poder hacer el apartado de Facturación más eficaz y con mayor usabilidad.
 Un apartado donde poder generar informes de ocupación.
 La opción de que las tarifas se apliquen de forma automática en base a las fechas, ocupación y tipo de habitación seleccionados.
+Integrar un sistema de generación de informes con el que poder analizar los datos que genera nuestro hotel.
