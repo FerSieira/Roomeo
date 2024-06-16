@@ -22,7 +22,7 @@ class ReservasController extends Controller {
         if ($request->filled('fecha_inicio')) {
             $query->whereDate('Fecha_Llegada', $request->fecha_inicio);
         } elseif (!$request->has('ver_todas')) {
-            $query->whereDate('Fecha_Llegada', '>=', Carbon::today());
+            $query->whereDate('Fecha_Salida', '>=', Carbon::today());
         }
         
         if ($request->filled('nombre_cliente')) {
