@@ -21,16 +21,23 @@ Fichas:
 
 ### Diseño de interfaces de usuarios.
 
-- Menú principal:
+- **Menú principal:**
 ![Dashboard](doc/img/Dashboard.png)
-- Reservas:
+- **Reservas:**
 ![Reservas](doc/img/ReservasIndex.png)
+- **Servicios:**
 ![Servicios](doc/img/Servicios.png)
+- **Reserva de servicios:**
 ![RsvServicios](doc/img/RsvServicios.png)
+- **Clientes:**
 ![Clientes](doc/img/Clientes.png)
+- **Empleados:**
 ![Empleados](doc/img/Empleados.png)
+- **Habitación:**
 ![Habitacion](doc/img/Habs.png)
+- **Tipos de habitación:**
 ![Tipos Habitacion](doc/img/TiposHab.png)
+- **Facturas:**
 ![Facturas](doc/img/Facturas.png)
 
 ### Diagrama de Base de Datos.
