@@ -11,10 +11,9 @@ El otro objetivo principal es como mencionamos anteriormente, que sea intuitivo 
 
 ## Instalación / Puesta en marcha
 
-Para la puesta en marcha de la instalación o una prueba de esta tenemos dos opciones. Descargar los archivos de src del proyecto y utilizarlos en Laragon para hacer una prueba local en el equipo. Simplemente haríamos las migraciones y podríamos comenzar a utilizar la aplicación en local.
+Para la puesta en marcha de la instalación o una prueba de esta tenemos dos opciones. Descargar los archivos de src del proyecto y utilizarlos en Laragon para hacer una prueba local en el equipo. Para lo que simplemente haríamos las migraciones, y podríamos comenzar a utilizar la aplicación en local.
 
-En el caso de preferir el uso de un servidor web, solo tendríamos que elegir un proveedor y realizar las instalaciones pertinentes en el servidor para que el proyecto Laravel pueda funcionar (nginx, php, ...).
-En mi caso utilicé un servidor web de DigitalOcean con la ayuda de Laravel Forge por lo que mi script de instalación es así:
+En el caso de preferir el uso de un servidor web, solo tendríamos que elegir un proveedor y realizar las instalaciones pertinentes en el servidor para que el proyecto Laravel pueda funcionar (nginx, php, ...). En mi caso utilicé un servidor web de DigitalOcean con la ayuda de Laravel Forge por lo que mi script de instalación es así:
 
 ```bash
 cd /home/forge/default/src
