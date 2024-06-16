@@ -86,12 +86,12 @@ El cálculo  presupuestario de este proyecto se ha realizado teniendo en cuenta 
 
 | CONCEPTO | IMPORTE|
 |--|--|
-|**A) INVERSIONS**
-|Mobiliario e instalacións | 330 euros |
+|**A) INVERSIONES**
+|Mobiliario e instalaciones | 330 euros |
 |Equipos informáticos | 1560 euros |
-|**TOTAL INVERSIÓNS:** | 1890 euros |
+|**TOTAL INVERSIONES:** | 1890 euros |
 |**B) GASTOS**
-|Persoal | 2480 euros |
+|Personal | 2480 euros |
 |Luz | 4,8 euros |
 |Internet | 80 euros |
 |Alquiler Servidor Web | 11 euros |
