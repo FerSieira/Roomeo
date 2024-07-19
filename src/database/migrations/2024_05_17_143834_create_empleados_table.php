@@ -29,7 +29,7 @@ return new class extends Migration
             'Apellidos' => 'Usuario',
             'Departamento' => 'Recepcion',
             'Usuario' => 'Admin',
-            'password' => Hash::make('VhzTmdYfg31.'),
+            'password' => Hash::make('Abcd123.'),
             'Telefono' => '999999999',
             'Email' => 'admin@roomeo.es',
             'Rol' => 'administrador',
