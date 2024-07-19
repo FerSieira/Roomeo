@@ -39,7 +39,7 @@ El servicio de limpieza podrá conectarse al dominio desde su dispositivo móvil
 
 ## Sobre el autor
 
-Soy Fernando Sieira Rodríguez, en unos meses oficialmente, desarrollador de aplicaciones multiplataforma. 
+Soy Fernando Sieira Rodríguez, desarrollador de aplicaciones multiplataforma. 
 
 En cuanto a mis puntos fuertes en el campo de la informática, pondría de número uno Java ya que es el lenguaje que más he usado y el primero que aprendí por lo que le tengo un especial cariño, otros dos lenguajes que también me gusta utilizar son Python y PHP. 
 Aunque el mundo de las bases de datos también me apasiona. 
